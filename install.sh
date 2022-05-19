@@ -9,7 +9,3 @@ sed -ie "s/^ZSH_THEME=.*/ZSH_THEME=\"$theme_name\"/" ~/.zshrc
 echo "Downloading $theme_name theme from github"
 touch ~/.oh-my-zsh/themes/$theme_name.zsh-theme
 curl -fsSL https://raw.githubusercontent.com/keith-gamble/zsh-theme/master/kgamble.zsh-theme > ~/.oh-my-zsh/themes/$theme_name.zsh-theme
-
-# Restart the shell
-echo "Restarting shell"
-source ~/.zshrc

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 # Replace the current default theme with a new one in the .zshrc file
 theme_name=kgamble

@@ -34,7 +34,7 @@ prompt_segment() {
 # End the prompt, closing any open segments
 prompt_end() {
   if [[ -n $CURRENT_BG ]]; then
-    print -n "%{%k%F{$CURRENT_BG}%}"
+    print -n "%{%k%F{$CURRENT_BG}%}$SEGMENT_SEPARATOR"
   else
     print -n "%{%k%}"
   fi
@@ -51,7 +51,7 @@ get_host() {
     (*)   CURRENT_BG=yellow;;
   esac
 
-	prompt_segment $CURRENT_BG $PRIMARY_FG " $(hostname -s) "
+	prompt_segment $CURRENT_BG $PRIMARY_FG " $(hostname -s)"
 	prompt_end
 }
 

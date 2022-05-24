@@ -99,7 +99,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias zsh-update="zsh -c \"$(curl -sSL https://raw.githubusercontent.com/keith-gamble/zsh-theme/master/install.sh)\" && source ~/.zshrc"
+alias zsh-update="zsh -c \"\$(curl -sSL https://raw.githubusercontent.com/keith-gamble/zsh-theme/master/install.sh)\" && source ~/.zshrc"
 
 # Lets add the ability to press alt/opt + left/right to skip over words!
 bindkey -e

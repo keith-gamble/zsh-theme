@@ -99,3 +99,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias zsh-update="zsh -c \"$(curl -fsSL https://raw.githubusercontent.com/keith-gamble/zsh-theme/master/install.sh)\" && source ~/.zshrc\""
+
+# Lets add the ability to press alt/opt + left/right to skip over words!
+bindkey -e
+bindkey "^[[1;9C" forward-word
+bindkey "^[[1;9D" backward-word

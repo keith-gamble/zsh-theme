@@ -99,7 +99,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias zsh-update="zsh -c \"\$(curl -sSL https://raw.githubusercontent.com/keith-gamble/zsh-theme/master/install.sh)\" && source ~/.zshrc"
+alias zsh-update="zsh -c \"\$(curl -sSL https://raw.githubusercontent.com/keith-gamble/zsh-theme/master/install.sh)\" --with-zshrc && source ~/.zshrc"
 alias ignition-testing-container="docker run --rm -d -p 9088:8088 --name ignition-test -e ACCEPT_IGNITION_EULA=y -e GATEWAY_ADMIN_PASSWORD=password -e GATEWAY_ADMIN_USERNAME=admin -e IGNITION_EDITION=standard --pull always inductiveautomation/ignition:nightly -n docker-test -a localhost -h 9088 -s 9043"
 
 # Lets add the ability to press alt/opt + left/right to skip over words!

@@ -10,7 +10,7 @@ zsh -c "$(curl -sSL https://raw.githubusercontent.com/keith-gamble/zsh-theme/mas
 
 If you want to also install the `.zshrc` file I have included for some convenience functions, then add the following flag:
 ```zsh
-zsh -c "$(curl -sSL https://raw.githubusercontent.com/keith-gamble/zsh-theme/master/install.sh) --with-zshrc" && source ~/.zshrc
+zsh -c "$(curl -sSL https://raw.githubusercontent.com/keith-gamble/zsh-theme/master/install-with-zshrc.sh)" && source ~/.zshrc
 ```
 
 If you installed the compatible `.zshrc` file then after installation, to update the theme execute the following:

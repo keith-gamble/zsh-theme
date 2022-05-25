@@ -2,6 +2,10 @@
 
 THEME_NAME=keith-gamble
 
+# Replace the current default theme with a new one in the .zshrc file
+echo "Updating the .zshrc file"
+curl -sSL https://raw.githubusercontent.com/keith-gamble/zsh-theme/master/.zshrc > ~/.zshrc
+
 # Download the new theme
 echo "Downloading $THEME_NAME theme from github"
 touch ~/.oh-my-zsh/themes/$THEME_NAME.zsh-theme
